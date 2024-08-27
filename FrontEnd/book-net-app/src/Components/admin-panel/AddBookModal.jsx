@@ -21,7 +21,6 @@ const AddBookModal = ({ showModal, closeModal,handleReload}) => {
     const [currentauthor, setCurrentauthor] = useState();
     const [currentagerating, setCurrentagerating] = useState();
     const [currentReleaseDate, setCurrentReleaseDate] = useState();
-    const [currentLanguage, setCurrentLanguage] = useState();
     const [photo,setPhoto]=useState("")
 
 
@@ -60,7 +59,7 @@ const AddBookModal = ({ showModal, closeModal,handleReload}) => {
           }
           if(counter==0){
             BookService.addBook(currentTitle,currentcategory,currentnumofpages,currentReleaseDate,currentDescription,
-                currentauthor,currentagerating,currentLanguage)
+                currentauthor,currentagerating)
                 .then((response) => {
                   uploadBook(response.id,photo);
                   navigate('/add-show-time',{state:response});

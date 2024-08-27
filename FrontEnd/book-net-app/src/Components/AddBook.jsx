@@ -15,6 +15,7 @@ import GoogleLoginButton from './GoogleLogin';
 import BookService from '../services/book.service';
 import {uploadBook} from '../services/imagekit.service';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const AddBook = () => {
   const navigate=useNavigate();
@@ -91,6 +92,8 @@ const AddBook = () => {
       currentauthor,currentagerating)
       .then((response) => {
         uploadBook(response.id,photo);
+        toast.success("The book has been successfully uploaded.")
+        navigate('/books')
       })
       .catch(error => {
       console.log(error);

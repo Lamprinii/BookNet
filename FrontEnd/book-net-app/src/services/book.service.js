@@ -8,22 +8,18 @@ class BookService {
         });
     }
 
-    addBook(name,genre,duration,releaseDate,description,director,actors,rating,language){
-        if (typeof actors === 'string') {
-            actors = actors.split(',').map(actor => actor.trim());
-        }
+    addBook(name,category,numofpages,releaseDate,description,author,agerating){
+        
         
         return api
         .post("/books",{
             name,
-            genre,
-            duration,
+            category,
+            numofpages,
             releaseDate,
             description,
-            director,
-            actors,
-            rating,
-            language
+            author,
+            agerating
         })
         .then(response => {
             return response.data;
@@ -46,21 +42,18 @@ class BookService {
         });
     }
 
-    editBook(id,genre,duration,releaseDate,description,director,actors,rating,language){
-        if (typeof actors === 'string') {
-            actors = actors.split(',').map(actor => actor.trim());
-        }
+    editBook(id,name,category,numofpages,releaseDate,description,author,agerating){
+        
 
         return api
         .put("/books/update/"+id,{
-            genre,
-            duration,
+            name,
+            category,
+            numofpages,
             releaseDate,
             description,
-            director,
-            actors,
-            rating,
-            language
+            author,
+            agerating
         })
         .then(response =>{
             return response.data;
