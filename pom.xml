@@ -11,8 +11,8 @@
 	<groupId>com.unipi</groupId>
 	<artifactId>BookNetApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CineTicketBooking</name>
-	<description>Cinema Managment Website</description>
+	<name>BookNet</name>
+	<description>BookNet Rental Library Management</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>

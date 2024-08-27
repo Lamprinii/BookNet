@@ -1,3 +1,3 @@
-# CineTicketBooking
+# BookNet
 
-Cinema Managment Website
+BookNet Rental Library Management
