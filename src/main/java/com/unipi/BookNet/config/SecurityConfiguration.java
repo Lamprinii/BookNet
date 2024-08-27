@@ -27,7 +27,7 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception{
 
         httpSecurity.csrf(csrf -> csrf.disable()).authorizeHttpRequests(auth -> auth
-                .requestMatchers("api/users/login","api/users/register","api/auth/**", "api/books/**","/api/oauth2/**").permitAll()
+                .requestMatchers("api/users/login","api/users/register","api/auth/**", "api/books/**","/api/oauth2/**", "api/imagekit", "api/imagekit/**").permitAll()
                 .anyRequest().authenticated())
                 .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider)
