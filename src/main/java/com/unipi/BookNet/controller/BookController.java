@@ -51,7 +51,8 @@ public class BookController {
     public ResponseEntity<Book> addNewBook(@RequestBody Book book) throws Exception {
 
             Book addedbook= bookService.addNewBook(book);
-            return new ResponseEntity<>(addedbook,HttpStatus.CREATED);
+        System.out.println("TEEEEEESSSSSSSSSTTTTTTTTTTTTTTTT");
+        return new ResponseEntity<>(addedbook,HttpStatus.CREATED);
         //Internal error
 
     }

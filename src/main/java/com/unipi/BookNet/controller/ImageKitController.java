@@ -28,6 +28,7 @@ public class ImageKitController {
         imageKit.setConfig(config);
         long time=(System.currentTimeMillis()/1000L)+1000L;
         System.out.println(time);
+        System.out.println("TEEEEST TT EE SSS TTTT");
         // Map<String,String> authenticationParams = ImageKit.getInstance().getAuthenticationParameters();
         Map<String,String> authenticationParams=imageKit.getAuthenticationParameters(String.valueOf(System.currentTimeMillis()+new Random().nextLong()),time);
         return authenticationParams;

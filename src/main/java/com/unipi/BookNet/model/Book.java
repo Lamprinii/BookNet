@@ -41,6 +41,29 @@ public class Book {
     public Book() {
 
     }
+
+    public Book(String name, String category, Integer numofpages, String agerating, String author, String description, LocalDate releaseDate) {
+        this.name = name;
+        this.category = category;
+        this.numofpages = numofpages;
+        this.agerating = agerating;
+        this.author = author;
+        this.description = description;
+        this.releaseDate = releaseDate;
+        this.status = BookStatus.AVAILABLE;
+    }
+
+    public Book(Long id, String name, String category, String agerating, String author, String description, LocalDate releaseDate, Integer numofpages) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.agerating = agerating;
+        this.author = author;
+        this.description = description;
+        this.releaseDate = releaseDate;
+        this.numofpages = numofpages;
+    }
+
     public String getTitle() {
         return name;
     }

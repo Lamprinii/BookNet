@@ -35,6 +35,7 @@ public class BookService {
         if(bookOptional.isPresent()){
             throw new IllegalStateException("Book name already in list");
         }
+        book.setStatus(BookStatus.AVAILABLE);
         return bookRepository.save(book);
     }
 
