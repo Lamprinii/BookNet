@@ -1,0 +1,13 @@
+.custom-Google-btn {
+    background-color: white !important;
+    color: #031926 !important;
+}
+
+.custom-Google-btn:hover {
+    background-color: #031926 !important;
+    color: #F4E9CD !important;
+}
+
+.custom-google-icon {
+    font-size: 2rem; /* Adjust the size as needed */
+}

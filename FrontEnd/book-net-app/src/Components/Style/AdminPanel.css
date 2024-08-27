@@ -1,0 +1,22 @@
+.admin-edit-container {
+    background-color: #77ACA2 !important;
+    border-radius: 15px !important;  
+    backdrop-filter: saturate(200%) blur(25px);
+    width: auto;
+    height: auto;
+    display: "flex";
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items: center;
+    
+
+}
+
+.datatable-container{
+    min-height:50vh;
+}
+
+.error{
+    border: 1px solid red;
+}
+

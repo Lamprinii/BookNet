@@ -1,0 +1,38 @@
+.bookings-details{
+    color: white;
+}
+
+.warning{
+    color: red;
+    font-weight: bold;
+}
+.booking-container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+    gap: 15px;
+    font-size: 20px;
+}
+.backButton{
+    color: white;
+    padding: 10px;
+    transition: all 0.5s;
+    width: fit-content;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:5px;
+    margin-top: 1%;
+  }
+  
+  .backButton:hover{
+    background-color: white;
+    color:black;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+  }

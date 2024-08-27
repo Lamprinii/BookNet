@@ -1,0 +1,73 @@
+.bookCard{
+    width:100%;
+    transform: scale(0);
+    position: relative;
+    border-radius: 25px;
+    margin:2%;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.bookText{
+    opacity: 0;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    background-color: rgba(0,0,0,0.7);
+    transform: all 1s;
+    z-index: 99;
+    top:0;
+    left:0;
+    border-radius: 25px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    
+}
+
+.bookText a{
+    width: 90%;
+}
+
+@media  (max-width: 700px) {
+    .bookText{
+        font-size: medium;
+        font-weight: bold;
+    }
+}
+
+
+
+.bookPhoto{
+    border: 2px solid white;
+    width:100%;
+    border-radius: 25px;
+    margin: 0;
+}
+
+.bookCard:hover > .bookText{
+    opacity: 1;
+    transform: all 1s;
+}
+
+.bookCard:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.status{
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
